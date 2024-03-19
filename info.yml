@@ -1,0 +1,87 @@
+type: prog
+
+titre: Les points 2D -1-
+
+niveau: base
+
+objectif: Produire la définition de la classe Point
+
+énoncé: |
+  On souhaite définir la classe **Point** représentant les points d'un plan cartésien, avec les membres suivants:
+  - l'abcisse `x` du point dans le plan
+  - l'ordonnée `y` du point dans le plan  
+  - la méthode `déplacer(dx, dy)` : permet de déplacer le point d'une distance (`dx,dy`) sur le plan.
+
+  Dans la classe **TestPoint**, la classe **Point** est testée en créant un objet `point`, ses attributs sont initialisés par des valeurs reçues en entrée pour produire en sortie les valeurs des attributs avant et après l'appel de la méthode qui déplace le `point`.   
+  Les déplacements horizontal et vertical `dx` et `dy` sont reçus en entrée aussi.
+ 
+  ### Entrées
+
+  - **x** : abcisse du point (nombre entier)
+  - **y** : ordonnée du point (nombre entier)
+  - **dx** : déplacement horizontal du point (nombre entier)
+  - **dy** : déplacement vertical du point (nombre entier)
+
+  ### Sortie attendue
+
+  Les valeurs des attributs de l'objet `point` suivies par les valeurs des attributs du même point après l'appel de la méthode membre.
+
+  ### À faire
+
+  Compléter le code de la définition de la classe **Point**.
+
+  ### Exemples
+
+  1. Le point origine
+
+  - Entrées :
+  ```
+    0
+    0
+    1
+    1
+
+  ```
+  
+  - Sortie attendue :
+  ``` 
+    0
+    0
+    1
+    1
+
+  ```
+  2. Un autre point
+
+  - Entrées :
+  ```
+    10
+    20
+    5
+    3
+
+  ```
+
+  - Sortie attendue :
+  ```
+    10
+    20
+    15
+    23
+
+  ```
+ébauches:
+  java: !include Point.java
+
+
+rétroactions:
+  positive: Bravo !
+  négative: Revoir la syntaxe de définition de classe.
+
+tests: !include tests.yml
+
+auteur: Wafaa Niar Dinedane / Patrick Lafrance
+licence: 2021 CC-BY-SA
+
+
+
